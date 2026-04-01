@@ -1,0 +1,8 @@
+services:
+  brandingiron:
+    image: ghcr.io/stockyard-dev/stockyard-brandingiron:latest
+    ports: ["9040:9040"]
+    volumes: [brandingiron-data:/data]
+    restart: unless-stopped
+volumes:
+  brandingiron-data:
